@@ -1,26 +1,22 @@
 const userController = () => {
-  let userControllerInstance;
-
-  const findAll = (req, res) => {
-    return res.status(200).json({});
-  };
-
-  const create = (req, res) => {
-    return res.status(200).json(req.body);
-  };
+  let userControllerInstance
 
   return {
     createController: () => {
-      if (userControllerInstance) return userControllerInstance;
+      if (userControllerInstance) return userControllerInstance
 
       userControllerInstance = {
-        findAll,
-        create,
-      };
+        findAll (req, res) {
+          return res.status(200).json({})
+        },
+        create (req, res) {
+          return res.status(200).json(req.body)
+        }
+      }
 
-      return userControllerInstance;
+      return userControllerInstance
     }
   }
-};
+}
 
-module.exports = userController;
+module.exports = userController
