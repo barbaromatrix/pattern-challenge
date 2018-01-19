@@ -1,0 +1,25 @@
+{
+  "name": "pattern-challenge",
+  "version": "1.0.0",
+  "description": "Necessário utilizar Factory com Singleton. Seguindo o livro de referência `Node.js Design Patterns`, do autor Mario Casciaro.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Matheus Galdino <matheus.galdino@hotmail.com | matheus.galdino@concrete.com.br>",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.1.0",
+    "mongoose": "^4.13.9"
+  },
+  "devDependencies": {
+    "jest": "^22.1.2",
+    "nodemon": "^1.14.11"
+  }
+}
