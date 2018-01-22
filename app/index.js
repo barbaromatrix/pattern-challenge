@@ -1,8 +1,10 @@
-const express = require('express');
-const app = express();
+const express = require('express')
+const bodyParser = require('body-parser')
 
-const userController = require('./user/index');
+const app = express()
+app.use(bodyParser.urlencoded({ extended: true }))
+app.use(bodyParser.json())
 
-const x1 = userController.createController();
+app.use('/user', require('./user/index'))
 
-module.exports = app;
+module.exports = app

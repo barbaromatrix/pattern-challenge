@@ -1,17 +1,23 @@
 {
   "name": "pattern-challenge",
   "version": "1.0.0",
-  "description": "Necessário utilizar Factory com Singleton. Seguindo o livro de referência `Node.js Design Patterns`, do autor Mario Casciaro.",
+  "description": "Implementing `Node.js Design Patterns`, Mario Casciaro.",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon server.js",
     "start": "node server.js",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint . *.js",
+    "lint:fix": "eslint --fix . *.js"
   },
   "keywords": [],
   "author": "Matheus Galdino <matheus.galdino@hotmail.com | matheus.galdino@concrete.com.br>",
-  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/barbaromatrix/pattern-challenge/issues"
+  },
+  "license": "MIT",
   "dependencies": {
+    "axios": "^0.17.1",
     "bcrypt": "^1.0.3",
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
@@ -20,6 +26,12 @@
   },
   "devDependencies": {
     "jest": "^22.1.2",
-    "nodemon": "^1.14.11"
+    "nodemon": "^1.14.11",
+    "eslint": "^4.15.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1"
   }
 }
